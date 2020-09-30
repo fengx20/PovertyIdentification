@@ -1,75 +1,74 @@
 package com.wzxy.povertyidentification.bean;
 
 public class Toupiao {
-	
-	private String bjxzcy;
-	private String xs;
-	private String xsName;
-	private String sex;
-	private String className;
-	private String xueyuan;
-	private String zhuangtai;
-	
-	public Toupiao(){
-		
-	}
 
-	public String getBjxzcy() {
-		return bjxzcy;
-	}
+    private String bjxzcy;
+    private String xs;
+    private String xsName;
+    private String sex;
+    private String className;
+    private String xueyuan;
+    private String zhuangtai;
 
-	public void setBjxzcy(String bjxzcy) {
-		this.bjxzcy = bjxzcy;
-	}
+    public Toupiao() {
 
-	public String getXs() {
-		return xs;
-	}
+    }
 
-	public void setXs(String xs) {
-		this.xs = xs;
-	}
+    public String getBjxzcy() {
+        return bjxzcy;
+    }
 
-	public String getClassName() {
-		return className;
-	}
+    public void setBjxzcy(String bjxzcy) {
+        this.bjxzcy = bjxzcy;
+    }
 
-	public void setClassName(String className) {
-		this.className = className;
-	}
+    public String getXs() {
+        return xs;
+    }
 
-	public String getZhuangtai() {
-		return zhuangtai;
-	}
+    public void setXs(String xs) {
+        this.xs = xs;
+    }
 
-	public void setZhuangtai(String zhuangtai) {
-		this.zhuangtai = zhuangtai;
-	}
+    public String getClassName() {
+        return className;
+    }
 
-	public String getSex() {
-		return sex;
-	}
+    public void setClassName(String className) {
+        this.className = className;
+    }
 
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
+    public String getZhuangtai() {
+        return zhuangtai;
+    }
 
-	public String getXueyuan() {
-		return xueyuan;
-	}
+    public void setZhuangtai(String zhuangtai) {
+        this.zhuangtai = zhuangtai;
+    }
 
-	public void setXueyuan(String xueyuan) {
-		this.xueyuan = xueyuan;
-	}
+    public String getSex() {
+        return sex;
+    }
 
-	public String getXsName() {
-		return xsName;
-	}
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
-	public void setXsName(String xsName) {
-		this.xsName = xsName;
-	}
-	
-	
+    public String getXueyuan() {
+        return xueyuan;
+    }
+
+    public void setXueyuan(String xueyuan) {
+        this.xueyuan = xueyuan;
+    }
+
+    public String getXsName() {
+        return xsName;
+    }
+
+    public void setXsName(String xsName) {
+        this.xsName = xsName;
+    }
+
 
 }

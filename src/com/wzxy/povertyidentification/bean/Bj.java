@@ -1,38 +1,38 @@
 package com.wzxy.povertyidentification.bean;
 
 public class Bj {
-     
-	private String teacherNo;
-	private String className;
-	private String xueyuan;
-	
-	public Bj(){
-		
-	}
 
-	public String getTeacherNo() {
-		return teacherNo;
-	}
+    private String teacherNo;
+    private String className;
+    private String xueyuan;
 
-	public void setTeacherNo(String teacherNo) {
-		this.teacherNo = teacherNo;
-	}
+    public Bj() {
 
-	public String getClassName() {
-		return className;
-	}
+    }
 
-	public void setClassName(String className) {
-		this.className = className;
-	}
+    public String getTeacherNo() {
+        return teacherNo;
+    }
 
-	public String getXueyuan() {
-		return xueyuan;
-	}
+    public void setTeacherNo(String teacherNo) {
+        this.teacherNo = teacherNo;
+    }
 
-	public void setXueyuan(String xueyuan) {
-		this.xueyuan = xueyuan;
-	}
-	
-	
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public String getXueyuan() {
+        return xueyuan;
+    }
+
+    public void setXueyuan(String xueyuan) {
+        this.xueyuan = xueyuan;
+    }
+
+
 }

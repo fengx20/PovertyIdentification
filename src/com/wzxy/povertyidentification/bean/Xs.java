@@ -1,112 +1,110 @@
 package com.wzxy.povertyidentification.bean;
 
 public class Xs {
-	
-	private String bjcy;
-	private String stuNo;
-	private String stuName;
-	private String sex;
-	private String className;
-	private String xueyuan;
-	private String grade;
-	private String level;
-	private String zhuangtai;
-	private String toupiao;
-	private String cyqingkuang;
-	
-	
-	public Xs(){
-		
-	}
 
-	public String getStuNo() {
-		return stuNo;
-	}
+    private String bjcy;
+    private String stuNo;
+    private String stuName;
+    private String sex;
+    private String className;
+    private String xueyuan;
+    private String grade;
+    private String level;
+    private String zhuangtai;
+    private String toupiao;
+    private String cyqingkuang;
 
-	public void setStuNo(String stuNo) {
-		this.stuNo = stuNo;
-	}
+    public Xs() {
 
-	public String getStuName() {
-		return stuName;
-	}
+    }
 
-	public void setStuName(String stuName) {
-		this.stuName = stuName;
-	}
+    public String getStuNo() {
+        return stuNo;
+    }
 
-	public String getSex() {
-		return sex;
-	}
+    public void setStuNo(String stuNo) {
+        this.stuNo = stuNo;
+    }
 
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
+    public String getStuName() {
+        return stuName;
+    }
 
-	public String getClassName() {
-		return className;
-	}
+    public void setStuName(String stuName) {
+        this.stuName = stuName;
+    }
 
-	public void setClassName(String className) {
-		this.className = className;
-	}
+    public String getSex() {
+        return sex;
+    }
 
-	public String getXueyuan() {
-		return xueyuan;
-	}
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
 
-	public void setXueyuan(String xueyuan) {
-		this.xueyuan = xueyuan;
-	}
+    public String getClassName() {
+        return className;
+    }
 
-	public String getGrade() {
-		return grade;
-	}
+    public void setClassName(String className) {
+        this.className = className;
+    }
 
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
+    public String getXueyuan() {
+        return xueyuan;
+    }
 
-	public String getLevel() {
-		return level;
-	}
+    public void setXueyuan(String xueyuan) {
+        this.xueyuan = xueyuan;
+    }
 
-	public void setLevel(String level) {
-		this.level = level;
-	}
+    public String getGrade() {
+        return grade;
+    }
 
-	public String getZhuangtai() {
-		return zhuangtai;
-	}
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 
-	public void setZhuangtai(String zhuangtai) {
-		this.zhuangtai = zhuangtai;
-	}
+    public String getLevel() {
+        return level;
+    }
 
-	public String getToupiao() {
-		return toupiao;
-	}
+    public void setLevel(String level) {
+        this.level = level;
+    }
 
-	public void setToupiao(String toupiao) {
-		this.toupiao = toupiao;
-	}
+    public String getZhuangtai() {
+        return zhuangtai;
+    }
 
-	public String getCyqingkuang() {
-		return cyqingkuang;
-	}
+    public void setZhuangtai(String zhuangtai) {
+        this.zhuangtai = zhuangtai;
+    }
 
-	public void setCyqingkuang(String cyqingkuang) {
-		this.cyqingkuang = cyqingkuang;
-	}
+    public String getToupiao() {
+        return toupiao;
+    }
 
-	public String getBjcy() {
-		return bjcy;
-	}
+    public void setToupiao(String toupiao) {
+        this.toupiao = toupiao;
+    }
 
-	public void setBjcy(String bjcy) {
-		this.bjcy = bjcy;
-	}
+    public String getCyqingkuang() {
+        return cyqingkuang;
+    }
 
-	
+    public void setCyqingkuang(String cyqingkuang) {
+        this.cyqingkuang = cyqingkuang;
+    }
+
+    public String getBjcy() {
+        return bjcy;
+    }
+
+    public void setBjcy(String bjcy) {
+        this.bjcy = bjcy;
+    }
+
 
 }
