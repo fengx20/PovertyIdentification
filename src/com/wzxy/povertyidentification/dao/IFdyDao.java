@@ -6,17 +6,46 @@ import com.wzxy.povertyidentification.bean.Fdy;
 
 public interface IFdyDao {
 
-    public int addFdy(Fdy fdy);                         //添加数据进入fdyxx表
+    /**
+     * 添加数据进入fdyxx表
+     * @param fdy
+     * @return
+     */
+    int addFdy(Fdy fdy);
 
-    public int deleteFdy(String TeacherNo);             //删除单个
+    /**
+     * 删除单个
+     * @param TeacherNo
+     * @return
+     */
+    int deleteFdy(String TeacherNo);
 
-    public int updateFdy(String TeacherNo, Fdy fdy);     //修改
+    /**
+     * 修改单个
+     * @param TeacherNo
+     * @param fdy
+     * @return
+     */
+    int updateFdy(String TeacherNo, Fdy fdy);
 
-    public List<Fdy> fdyList();                          //查询所有
+    /**
+     * 查询所有
+     * @return
+     */
+    List<Fdy> fdyList();
 
-    public List<Fdy> findByTeacherNo(String TeacherNo); //查询单个
+    /**
+     * 查询单个
+     * @param TeacherNo
+     * @return
+     */
+    List<Fdy> findByTeacherNo(String TeacherNo);
 
-    public boolean checkchongming(String TeacherNo);    //判断重名
-
+    /**
+     * 判断重名
+     * @param TeacherNo
+     * @return
+     */
+    boolean checkchongming(String TeacherNo);
 
 }

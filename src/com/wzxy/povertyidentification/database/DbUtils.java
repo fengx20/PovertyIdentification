@@ -6,7 +6,7 @@ public class DbUtils {
     private String className = "com.mysql.cj.jdbc.Driver";
     private String url = "jdbc:mysql://localhost:3306/pkrd_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL";
     private String user = "root";
-    private String password = "19971114abc";
+    private String password = "123456";
 
     public Connection getConn() {
         Connection conn = null;

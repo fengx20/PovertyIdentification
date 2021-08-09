@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.wzxy.povertyidentification.bean.Bj;
 import com.wzxy.povertyidentification.factory.DaoFactory;
 
-@SuppressWarnings("serial")
 public class BjServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -28,13 +27,13 @@ public class BjServlet extends HttpServlet {
                 List<Bj> list = DaoFactory.getBjDaoInstance().findClassName(TeacherNo);  //查找与该教职工号对应所带的班级
                 request.setAttribute("suodaibj", list);
                 request.getRequestDispatcher("/view/page/Fdy/fdyChakan.jsp").forward(request, response);
-                return;
+                break;
             case 2: //系学院处查询本学院所有班级
                 String TeacherNo1 = request.getParameter("teacherNo");
                 List<Bj> list1 = DaoFactory.getBjDaoInstance().findClassName(TeacherNo1);  //找与该教职工号对应的班级
                 request.setAttribute("xybj", list1);
                 request.getRequestDispatcher("/view/page/Xxyc/Xxycchakan.jsp").forward(request, response);
-                return;
+                break;
         }
     }
 }

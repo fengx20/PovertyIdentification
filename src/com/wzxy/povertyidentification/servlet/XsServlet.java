@@ -49,7 +49,7 @@ public class XsServlet extends HttpServlet {
                 xs.setLevel(Level);
                 xs.setZhuangtai(Zhuangtai);
 
-                if (DaoFactory.getXsDaoInstance().checkchongming(StuNo1) == true) {
+                if (DaoFactory.getXsDaoInstance().checkchongming(StuNo1)) {
                     DaoFactory.getXsDaoInstance().addXs(xs);
                     response.setContentType("text/html;charset=utf8");
                     PrintWriter out = response.getWriter();
@@ -89,7 +89,7 @@ public class XsServlet extends HttpServlet {
                 xs1.setLevel(Level1);
                 xs1.setZhuangtai(Zhuangtai1);
 
-                if (DaoFactory.getXsDaoInstance().checkchongming(StuNo5) == true) {
+                if (DaoFactory.getXsDaoInstance().checkchongming(StuNo5)) {
                     DaoFactory.getXsDaoInstance().addXs(xs1);
                     response.setContentType("text/html;charset=utf8");
                     PrintWriter out = response.getWriter();

@@ -29,7 +29,7 @@ public class UserLoginServlet extends HttpServlet {
 				String User_no=request.getParameter("user_no");
 				String Password=request.getParameter("password");
 				String Actor=request.getParameter("actor");
-				if(DaoFactory.getUserLoginDaoInstance().UserLogin(User_no, Password,Actor)==true){
+				if(DaoFactory.getUserLoginDaoInstance().UserLogin(User_no, Password, Actor)){
 					if("Root".equals(Actor)){   //管理员登录验证
 						request.setAttribute("user_no",User_no);
 						RequestDispatcher dispatcher=request.getRequestDispatcher("/index.jsp");
@@ -39,7 +39,7 @@ public class UserLoginServlet extends HttpServlet {
 						RequestDispatcher dispatcher=request.getRequestDispatcher("/view/page/Xs/XsSuccess.jsp");
 						dispatcher.forward(request,response);
 					}else if("Bjxz".equals(Actor)){   //班级小组登录验证
-						if(DaoFactory.getXsDaoInstance().checkBjxzlevel(User_no)==true){ //判断是成员还是组长登录 true为成员
+						if(DaoFactory.getXsDaoInstance().checkBjxzlevel(User_no)){ //判断是成员还是组长登录 true为成员
 							request.setAttribute("fullstuNo",User_no);
 							//以下操作是通过查小组成员班级然后找到与其同班的同学最后添加进双主键的toupiao表里去实现一对多投票
 							String ClassName  ="";
@@ -79,14 +79,14 @@ public class UserLoginServlet extends HttpServlet {
 									tp.setXueyuan(Xueyuan);
 									tp.setZhuangtai(Zhuangtai);
 									//先判断toupiao表里是否有与bjcy，xs，重复的数据
-									if(DaoFactory.getToupiaoDaoInstance().checkchongming(Bjxzcy, Xs) == true){
+									if(DaoFactory.getToupiaoDaoInstance().checkchongming(Bjxzcy, Xs)){
 										//将在pkrdsqbxx表找到的小组成员与其同班同学添加进toupiao表
 										DaoFactory.getToupiaoDaoInstance().addToupiao(tp);
 									}
 								}
 							}
 						}
-						if(DaoFactory.getXsDaoInstance().checkBjxzlevel(User_no) == true){ //判断是成员还是组长 true: 成员
+						if(DaoFactory.getXsDaoInstance().checkBjxzlevel(User_no)){ //判断是成员还是组长 true: 成员
 							//取班级成员的班别只能在xsxx表里取 ，找与组员同一个班的学生
 							List<Xs> list3 = DaoFactory.getXsDaoInstance().findByStuNo(User_no);
 							request.setAttribute("className",list3);
@@ -116,7 +116,7 @@ public class UserLoginServlet extends HttpServlet {
 		  			RequestDispatcher dispatcher=request.getRequestDispatcher("/login.jsp?error=yes");
 		  			dispatcher.forward(request,response);
 	 			}
-				return;
+				break;
 			case 2: //用户修改密码
 				String User_no1 = request.getParameter("user_no");
 				String Password1 = request.getParameter("newpassword");
@@ -127,7 +127,7 @@ public class UserLoginServlet extends HttpServlet {
 				out.print("alert('修改成功！');");
 				out.print("history.go(-2)");
 				out.print("</script>");
-				return;
+				break;
 		}
 	}
 }

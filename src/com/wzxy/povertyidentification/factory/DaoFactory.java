@@ -14,7 +14,7 @@ import com.wzxy.povertyidentification.dao.IXsDao;
 import com.wzxy.povertyidentification.dao.IFdyDao;
 
 /**
- * 进行工厂类的封装，调用直接通过工厂类取得其实例化
+ * 进行工厂类的封装，调用直接通过工厂类取得其实例化（工厂模式）
  */
 public class DaoFactory {
 	public static IXsDao getXsDaoInstance(){

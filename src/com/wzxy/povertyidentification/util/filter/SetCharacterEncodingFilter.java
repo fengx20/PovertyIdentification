@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
 public class SetCharacterEncodingFilter implements Filter {
+
     class Request extends HttpServletRequestWrapper {
 
         public Request(HttpServletRequest request) {
